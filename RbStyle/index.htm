@@ -1,0 +1,42 @@
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="RbStyle.css">
+<script src="RbStyle.js"></script>
+<script src="RB.js"></script>
+
+<div class="navbar bg-orange">
+<button class="menubar-toggle orange ic ic-bars" type="submit"></button>
+Rondeo Balos Style
+<button href="#login" class="modal-toggle orange ic ic-home" type="submit"> Home</button>
+<button href="#login" class="modal-toggle orange ic ic-user" type="submit"> Login</button>
+<button href="#login" class="modal-toggle orange ic ic-cart" type="submit"> Cart</button>
+</div>
+
+<div class="menubar menubar-open">
+<div class="collapsible-set collapsible-close">
+<li class="collapsible-toggle ic ic-dash"> <i class="collapsible-content">Dashboard</i></li>
+<a class="ic ic-product link" href="#statistics"> <i class="collapsible-content">Statistics</i></a>
+</div>
+<div class="collapsible-set collapsible-close">
+<li class="collapsible-toggle ic ic-gears"> <i class="collapsible-content">Settings</i></li>
+<a class="ic ic-user link" href="#account"> <i class="collapsible-content">Account</i></a>
+<a class="ic ic-product link" href="#products"> <i class="collapsible-content">Products</i></a>
+</div>
+</div>
+
+yeah
+
+<div id="login" class="modal modal-hide">
+<div class="modal-head">
+<span class="modal-title">You must login to continue.</span>
+<span class="modal-close times ic ic-close" href="#login"></span>
+</div>
+<div class="modal-body">
+<span class="group"><li class="ic ic-user"> Username</li><br><input type="text"></span>
+<span class="group"><li class="ic ic-lock"> Password</li><br><input type="password"></span>
+<span class="group"><button class="orange ic ic-signin" type="submit"> Login</button></span>
+</div>
+<div class="modal-foot">
+<button class="red modal-close ic ic-close" align="left" type="submit" href="#login"> Close</button>
+<button class="blue modal-close ic ic-users" align="right" type="submit" href="#login"> Signup</button>
+</div>
+</div>

@@ -1,0 +1,14 @@
+<script type="text/javascript" src="RB.js"></script>
+
+<input type="submit" value="Add" id="yeah"><input type="submit" value="Clear" id="one">
+
+<div id="oten"></div>
+
+<script>
+rb("#yeah","click",function(){
+rb("#oten","append","<input><br>");
+});
+rb("#one","click",function(){
+rb("#oten","clear");
+});
+</script>

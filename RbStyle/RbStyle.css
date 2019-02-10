@@ -1,0 +1,308 @@
+/* All */
+*{
+font-family:arial;
+color:#555;
+}
+body{
+margin:0px;
+padding:0px;
+}
+a{
+text-decoration:none;
+}
+
+/*Navbar*/
+.navbar{
+position:relative;
+display:block;
+z-index:80;
+top:0px;
+padding:10px;
+}
+.navbar button{
+min-width:10px;
+margin:0px;
+}
+
+/* Menubar */
+.menubar{
+top:0px;
+z-index:70;
+background:#222d32;
+height:100%;
+transition:0.5s ease;
+display:inline-table;
+}
+.menubar-open{
+width:280px;
+}
+.menubar-close{
+width:55px;
+}
+.menubar-close *{
+overflow:hidden;
+}
+.menubar .menubar-head{
+color: #4b646f;
+background: #1a2226;
+padding:10px;
+display:block;
+position:relative;
+}
+.menubar li{
+color:#b8c7ce;
+}
+
+/* Collapsible Set */
+.collapsible-set{
+overflow:hidden;
+}
+.collapsible-set, .collapsible-set *{
+transition:0.5s ease;
+}
+.collapsible-set a{
+display: block;
+cursor:pointer;
+font-weight:bold;
+height:20px;
+padding:10px;
+background:#2c3b41;
+padding-left:20px;
+text-decoration:none;
+}
+.collapsible-set li{
+display: block;
+cursor:pointer;
+font-weight:bold;
+height:20px;
+padding:10px;
+}
+.collapsible-toggle{
+background:#1e282c;
+}
+.collapsible-content{
+color:#aaa;
+font-style:normal;
+}
+.collapsible-toggle *{
+color:#286090;
+}
+.focus{
+border-left:solid 3px #286090;
+}
+
+/* Modal */
+.modal{
+position:fixed;
+min-width:500px;
+min-height:300px;
+background:#eee;
+box-shadow:1px 1px 4px #555;
+border-radius:2px;
+transition:0.5s ease;
+z-index:100;
+}
+.modal-hide{
+opacity:0;
+top:-100%;
+}
+.modal-show{
+opacity:1;
+top:50px;
+}
+.modal-head{
+width:100%;
+min-height:50px;
+border-bottom:solid 1px #aaa;
+top:0px;
+position:absolute;
+}
+.modal-title{
+font-size:25px;
+margin:10px;
+float:left;
+}
+.times{
+color:#555;
+font-size:25px;
+font-weight:bold;
+float:right;
+padding:10px;
+cursor:pointer;
+border-radius:2px;
+}
+.times:hover{
+color: #fff;
+background-color: #c9302c;
+border-color: #ac2925;
+}
+.modal-foot{
+width:100%;
+min-height:50px;
+border-top:solid 1px #aaa;
+bottom:0px;
+position:absolute;
+}
+.modal-body{
+margin: 50px 0px;
+padding:10px;
+text-align:center;
+}
+
+/* Utils*/
+*[type="submit"]{
+border:none;
+padding:10px;
+margin:10px;
+border-radius:2px;
+cursor:pointer;
+min-width:100px;
+}
+*[type="text"],*[type="password"]{
+width:300px;
+height:40px;
+border-radius:2px;
+border:solid 1px grey;
+padding:10px;
+}
+*[align="left"]{
+float:left;
+}
+*[align="right"]{
+float:right;
+}
+.group{
+display:block;
+margin:20px;
+}
+.group li{
+float:left;
+display:block;
+margin-left:40px;
+}
+.default{
+color: #333;
+background-color: #fff;
+border-color: #ccc;
+}
+.default:focus{
+color: #333;
+background-color: #e6e6e6;
+border-color: #8c8c8c;
+}
+.default:hover{
+color: #333;
+background-color: #e6e6e6;
+border-color: #adadad;
+}
+.red,.bg-red{
+color: #fff;
+background-color: #d9534f;
+border-color: #d43f3a;
+}
+.red:focus{
+color: #fff;
+background-color: #c9302c;
+border-color: #761c19;
+}
+.red:hover{
+color: #fff;
+background-color: #c9302c;
+border-color: #ac2925;
+}
+.blue,.bg-blue{
+color: #fff;
+background-color: #337ab7;
+border-color: #2e6da4;
+}
+.blue:focus{
+color: #fff;
+background-color: #286090;
+border-color: #122b40;
+}
+.blue:hover{
+color: #fff;
+background-color: #286090;
+border-color: #204d74;
+}
+.orange,.bg-orange{
+color: #fff;
+background-color: #f0ad4e;
+border-color: #eea236;
+}
+.orange:focus{
+color: #fff;
+background-color: #ec971f;
+border-color: #985f0d;
+}
+.orange:hover{
+color: #fff;
+background-color: #ec971f;
+border-color: #d58512;
+}
+
+/* Icons */
+@font-face {
+font-family: 'FontAwesome';
+src: url('./fonts/fontawesome-webfont.eot?v=4.7.0');
+src: url('./fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('./fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('./fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('./fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('./fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+.ic:before{
+font: normal normal normal 20px/1 FontAwesome;
+}
+.ic-close:before{
+content: "\f00d";
+}
+.ic-key:before{
+content: "\f084";
+}
+.ic-user:before{
+content: "\f007";
+}
+.ic-users:before{
+content: "\f0c0";
+}
+.ic-save:before{
+content: "\f0c7";
+}
+.ic-signin:before{
+content: "\f090";
+}
+.ic-signout:before{
+content: "\f08b";
+}
+.ic-home:before{
+content: "\f015";
+}
+.ic-cart:before{
+content: "\f07a";
+}
+.ic-bars:before{
+content: "\f0c9";
+}
+.ic-arrowdown:after{
+content: "\f175";
+}
+.ic-arrowup:after{
+content: "\f176";
+}
+.ic-arrow:after{
+content: "\f177";
+}
+.ic-arrow:right:after{
+content: "\f178";
+}
+.ic-lock:before{
+content: "\f023";
+}
+.ic-gears:before{
+content: "\f085";
+}
+.ic-dash:before{
+content: "\f0e4";
+}
+.ic-product:before{
+content: "\f288";
+}
